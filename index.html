@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашняя_работа №1</title>
+</head>
+
+<body>
+    <p>
+        async - загружаем страницу, как только скрипт будет подгружен, он выполнится.
+        <br>
+        Не гарантирует упорядоченности скриптов и не заставляет ждать страницу.
+    </p>
+    <hr>
+    <p>
+        defer - срабатывает только после полной загрузки страницы. Помогает в обработке страницы. 
+    </p>
+    <hr>
+    <h3>Загрузка третьего скрипта осуществлена с параметром async</h3>
+
+    <script src="home_work_01_task_01.js" defer></script>
+    <script src="home_work_01_task_02.js" defer></script>
+    <script src="home_work_01_task_03.js" async></script>
+
+
+
+
+</body>
+
+</html>
