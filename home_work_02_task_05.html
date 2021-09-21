@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 5. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+// где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+// переданного значения операции (использовать switch) выполнить одну из арифметических
+// операций
+// (использовать функции из задания 4) и вернуть полученное значение.
+    'use strict';
+    function plus(a,b){
+        if (!(isNaN(a)||isNaN(b))){
+            return a+b
+        }
+    }
+
+    function minus(a,b){
+        if (!(isNaN(a)||isNaN(b))){
+            return a-b
+        }
+    }
+
+    function umonj(a,b){
+        if (!(isNaN(a)||isNaN(b))){
+            return a*b
+        }
+    }
+
+    function podeli(a,b){
+        if (!(isNaN(a)||isNaN(b))){
+            return a/b
+        }
+    }
+
+    function mathOperation(arg1, arg2, operation){
+        switch(operation){
+            case "+":
+                return plus(arg1,arg2);
+                break;
+            case "-":
+                return minus(arg1,arg2);
+                break;
+            case "*":
+                return umonj(arg1,arg2);
+                break;
+            case "/":
+                return podeli(ar1,arg2);
+                break;
+        }
+    }
+
+    let a=10,b=2,c="*"
+    console.log(`${a}${c}${b}=${mathOperation(a,b,c)}`)
+
+    </script>
+</body>
+</html>
